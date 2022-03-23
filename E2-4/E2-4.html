@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile E2-4</title>
+    <script
+      src="https://kit.fontawesome.com/626221ea71.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Shalom! My name is Michael</h1>
+    <h2>Im Programmer and a climber</h2>
+    <img src="mypic.jpg" alt="" width="300px" />
+    <p>
+      I have been playing video games since i remember myself and i love the
+      internet. My hobbies are sport climbing playing and the guitar<i
+        class="fa-solid fa-guitar"
+      ></i
+      >!.
+    </p>
+    <!-- Extra -->
+    <h2>These are my climbing shoes</h2>
+    <button id="btnID1" type="button" onclick="show1()">Scarpa "Drago"</button>
+    <img
+      style="display: none"
+      id="scarpa"
+      src="https://www.bananafingers.co.uk/sites/default/files/styles/product_gallery_full/public/product-images/footwear/scarpa_0025_70017-000-1_05_dra_yel_drago_yellow.jpg?itok=W3K6DuQ-"
+      alt=""
+      width="200px"
+    />
+    <br />
+    <button id="btnID2" type="button" onclick="show2()">
+      La-Sportiva "Solution"
+    </button>
+    <img
+      style="display: none"
+      id="lasport"
+      src="https://www.bananafingers.co.uk/sites/default/files/styles/product_gallery_large/public/product-images/footwear/la_sportiva_solution_2.jpg?itok=Ljou6rkX"
+      alt=""
+      width="200px"
+    />
+    <script>
+      function show1() {
+        if (document.getElementById("scarpa").style.display == "block")
+          document.getElementById("scarpa").style.display = "none";
+        else document.getElementById("scarpa").style.display = "block";
+      }
+      function show2() {
+        if (document.getElementById("lasport").style.display == "block")
+          document.getElementById("lasport").style.display = "none";
+        else document.getElementById("lasport").style.display = "block";
+      }
+    </script>
+    <!-- Extra -->
+    <br />
+    <div>My social links</div>
+    <ul>
+      <li><a href="#" class="fa-brands fa-instagram"></a></li>
+      <li>
+        <a
+          href="https://github.com/MichaelVez"
+          target="blank"
+          class="fa-brands fa-github"
+        ></a>
+      </li>
+      <li><a href="#" class="fa-brands fa-linkedin"></a></li>
+    </ul>
+  </body>
+</html>
